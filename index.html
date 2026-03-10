@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Claire Hansen - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" type="image/jpeg" href="/images/mitten_2.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0c0a13;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: 'Space Grotesk', sans-serif;
+        }
+
+        .animated-gradient {
+            background: linear-gradient(-45deg, #4f46e5, #c026d3, #22d3ee, #0ea5e9);
+            background-size: 400% 400%;
+            animation: gradient 15s ease infinite;
+        }
+
+        @keyframes gradient {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        .glass-nav {
+            background: rgba(12, 10, 19, 0.75);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .hover-card {
+            transition: transform 0.1s ease-out, box-shadow 0.3s ease-out;
+            transform-style: preserve-3d;
+        }
+
+        /* Specific Glow Colors */
+        .glow-blue:hover {
+            /* Large dark shadow for lift + Specific blue glow */
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5), 0 0 30px rgba(59, 130, 246, 0.6);
+        }
+
+        .glow-purple:hover {
+            /* Large dark shadow for lift + Specific purple glow */
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5), 0 0 30px rgba(168, 85, 247, 0.6);
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animate-fade-in {
+            animation: fadeInUp 0.6s ease-out forwards;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-900 text-gray-300 antialiased flex flex-col min-h-screen">
+
+    <nav class="glass-nav text-white p-4 sticky top-0 z-50 shadow-lg">
+        <div class="container mx-auto flex flex-wrap justify-center sm:justify-between items-center">
+            <a href="/" class="text-2xl font-bold hover:text-cyan-300 transition-colors duration-200 mb-2 sm:mb-0">Claire
+                Hansen</a>
+            <div class="flex flex-wrap justify-center gap-4 sm:gap-6 text-lg items-center">
+                <a href="/" class="text-cyan-300 font-bold">Home</a>
+
+                <div class="relative group">
+                    <a href="/games" class="hover:text-cyan-300 transition-colors duration-200 py-4 block">Game
+                        Projects</a>
+                    <div class="absolute left-1/2 transform -translate-x-1/2 pt-2 w-48 hidden group-hover:block">
+                        <div class="bg-gray-900 rounded-md shadow-xl border border-gray-700 overflow-hidden">
+                            <a href="/games/swornfish"
+                                class="block px-4 py-3 text-sm text-gray-300 hover:bg-gray-800 hover:text-cyan-300">Swornfish</a>
+                            <a href="/games/sheldon"
+                                class="block px-4 py-3 text-sm text-gray-300 hover:bg-gray-800 hover:text-cyan-300">Sheldon</a>
+                            <a href="/games/metroid"
+                                class="block px-4 py-3 text-sm text-gray-300 hover:bg-gray-800 hover:text-cyan-300">Metroid
+                                Remake</a>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="/experience" class="hover:text-cyan-300 transition-colors duration-200">Experience</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="max-w-7xl mx-auto p-4 sm:p-6 lg:p-8 flex-grow flex flex-col justify-center animate-fade-in">
+
+        <header class="text-center mb-12">
+            <div class="relative p-12 rounded-xl overflow-hidden animated-gradient shadow-2xl">
+                <h1 class="text-6xl md:text-8xl font-bold text-white mb-4">Claire Hansen</h1>
+                <p class="text-2xl md:text-3xl text-gray-200 mb-8">Software Engineer | Game Developer</p>
+                <div class="flex justify-center items-center gap-8 text-3xl text-white">
+                    <a href="mailto:clairehansen2025@gmail.com" aria-label="Email"
+                        class="hover:text-cyan-200 transition-colors duration-200"><i class="fas fa-envelope"></i></a>
+                    <a href="https://github.com/clhansen3" target="_blank" aria-label="GitHub"
+                        class="hover:text-cyan-200 transition-colors duration-200"><i class="fab fa-github"></i></a>
+                    <a href="https://do-your-best.itch.io/" target="_blank" aria-label="Itch.io"
+                        class="hover:text-cyan-200 transition-colors duration-200"><i class="fab fa-itch-io"></i></a>
+                    <a href="https://linkedin.com/in/claire-hansen-93120a255" target="_blank" aria-label="LinkedIn"
+                        class="hover:text-cyan-200 transition-colors duration-200"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </header>
+
+        <section class="max-w-4xl mx-auto mb-16 text-center px-4">
+            <h2 class="text-3xl font-bold text-white mb-6">About Me</h2>
+            <p class="text-gray-300 text-lg leading-relaxed">
+                I am a senior at the University of Michigan - Ann Arbor, studying computer science. In my free
+                time, I am a game developer working on <a href="/games"
+                    class="text-cyan-400 hover:text-cyan-300 underline transition-colors">several different
+                    projects</a>. I also write a lot in my free time and read a lot of books, especially classical
+                literature.
+            </p>
+        </section>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto w-full">
+            <a href="games"
+                class="hover-card glow-blue bg-gray-800 p-8 rounded-xl shadow-lg border border-gray-700 hover:border-blue-500 block text-center group">
+                <div class="text-5xl text-blue-400 mb-4 group-hover:text-blue-300"><i class="fas fa-gamepad"></i></div>
+                <h2 class="text-3xl font-bold text-gray-100 mb-2">Game Projects</h2>
+                <p class="text-gray-400">A collection of some of my projects that can be played in your browser.</p>
+            </a>
+
+            <a href="experience"
+                class="hover-card glow-purple bg-gray-800 p-8 rounded-xl shadow-lg border border-gray-700 hover:border-purple-500 block text-center group">
+                <div class="text-5xl text-purple-400 mb-4 group-hover:text-purple-300"><i class="fas fa-code"></i>
+                </div>
+                <h2 class="text-3xl font-bold text-gray-100 mb-2">Experience</h2>
+                <p class="text-gray-400">My professional history, information, and a picture of my cat!</p>
+            </a>
+        </div>
+
+    </div>
+    
+    <footer class="bg-black/30 backdrop-blur-md border-t border-gray-800 text-center py-8 mt-12">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-center gap-6 mb-4 text-2xl text-gray-400">
+                <a href="mailto:clairehansen2025@gmail.com" class="hover:text-white transition-colors"><i
+                        class="fas fa-envelope"></i></a>
+                <a href="https://github.com/clhansen3" class="hover:text-white transition-colors"><i
+                        class="fab fa-github"></i></a>
+                <a href="https://do-your-best.itch.io/" class="hover:text-white transition-colors"><i
+                        class="fab fa-itch-io"></i></a>
+                <a href="https://linkedin.com/in/claire-hansen-93120a255" class="hover:text-white transition-colors"><i
+                        class="fab fa-linkedin"></i></a>
+            </div>
+            <p class="text-gray-500 text-sm">© 2025 Claire Hansen. Built with Tailwind CSS & Vanilla JS.</p>
+        </div>
+    </footer>
+
+    <script>
+        const cards = document.querySelectorAll('.hover-card');
+
+        cards.forEach(card => {
+            card.addEventListener('mousemove', (e) => {
+                const rect = card.getBoundingClientRect();
+                const x = e.clientX - rect.left - rect.width / 2;
+                const y = e.clientY - rect.top - rect.height / 2;
+
+                const rotateX = (y / rect.height) * -20;
+                const rotateY = (x / rect.width) * 20;
+
+                card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale3d(1.05, 1.05, 1.05)`;
+            });
+
+            card.addEventListener('mouseleave', () => {
+                card.style.transform = '';
+            });
+        });
+    </script>
+</body>
+
+</html>
