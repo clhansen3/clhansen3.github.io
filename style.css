@@ -37,7 +37,7 @@ body {
 .game-tile {
   position: relative;
   display: block;
-  height: 180px;
+  height: 15em;
   background-color: rgb(234, 214, 236);
   border: 3px solid rgb(17, 2, 19);
   border-radius: 1.5em;
