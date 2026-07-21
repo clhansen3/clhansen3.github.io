@@ -115,3 +115,21 @@ a:hover {
     "GRAD" 0,
     "ROND" 0;
 }
+
+#images {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 1.5em;
+  margin: 2em 18em;
+  align-items: start;
+}
+
+.image {
+  display: block;
+}
+
+.image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
